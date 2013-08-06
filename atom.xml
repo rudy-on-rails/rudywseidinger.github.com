@@ -1,110 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>begin..rescue</title>
-  <meta name="author" content="Rudy Seidinger Jr">
-
-  
-  <meta name="description" content="Muitas vezes, em um projeto em Rails, nos vemos encorajados a escrever parte da lógica da aplicação em nossos controllers. Talvez isso acontença, &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://rudywseidinger.github.com/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="begin..rescue" type="application/atom+xml">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <div id="logo">
-  	<div id="logoLeft">{</div>
-  	<div id="logoText">lambda</div>
-  	<div id="logoRight">}</div>
-  	<div class="clear"></div>
-  </div>
-  <h1><a href="/">begin..rescue</a></h1>
-  
-    <h2>Programming is everything and everything is programming</h2>
-  
-  <div class="clear"></div>
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:rudywseidinger.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Procurar..."/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/about.html">About me</a></li>
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[begin..rescue]]></title>
+  <link href="http://rudywseidinger.github.com/atom.xml" rel="self"/>
+  <link href="http://rudywseidinger.github.com/"/>
+  <updated>2013-08-06T15:33:43-03:00</updated>
+  <id>http://rudywseidinger.github.com/</id>
+  <author>
+    <name><![CDATA[Rudy Seidinger Jr]]></name>
     
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/09/25/rails-controllers-x-domain-logic/">Rails - Controllers X Lógica De Domíno</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-09-25T20:10:00-03:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Muitas vezes, em um projeto em Rails, nos vemos encorajados a escrever parte da lógica da aplicação em nossos controllers. Talvez isso acontença, principalmente, pelo fato da grande maioria dos exemplos existentes na internet e literatura (de Rails) não mostrar preocupação com a arquitetura da aplicação (até pelo foco nestes casos ser a tecnologia, em si).</p>
+  <entry>
+    <title type="html"><![CDATA[Rails - Controllers x Lógica de domíno]]></title>
+    <link href="http://rudywseidinger.github.com/blog/2012/09/25/rails-controllers-x-domain-logic/"/>
+    <updated>2012-09-25T20:10:00-03:00</updated>
+    <id>http://rudywseidinger.github.com/blog/2012/09/25/rails-controllers-x-domain-logic</id>
+    <content type="html"><![CDATA[<p>Muitas vezes, em um projeto em Rails, nos vemos encorajados a escrever parte da lógica da aplicação em nossos controllers. Talvez isso acontença, principalmente, pelo fato da grande maioria dos exemplos existentes na internet e literatura (de Rails) não mostrar preocupação com a arquitetura da aplicação (até pelo foco nestes casos ser a tecnologia, em si).</p>
 
 <p>Acho que essa falta de precupação com design mais rico se justifica na maioria dos casos, onde a aplicação é pequena, o escopo do projeto é bem limitado ou existe uma necessidade imediata de lançar um produto ao público (como acontece em muitas startups - e nada impede um &#8216;refactoring&#8217; posterior, mas isto é outra estória&#8230;). Existem, porém, outros casos&#8230; Aplicações grandes, complexas ou onde a criticidade das informações é elevada, requerem cuidados maiores com o design da solução (ou não&#8230; dependendo de quão suicida o time for!).</p>
 
@@ -274,44 +188,15 @@
 <p>Acho que a idéia é mais ou menos essa&#8230; Com esse pequeno (e fácil!) refactoring do controller, explicitamos o caso de uso mencioando e nosso controller passa a ser somente um consumidor de nossa API para cancelamento de pedidos!!! Parece razoável (apesar de ainda ser possível melhorar isso)&#8230;</p>
 
 <p>O livro do Eric Evans - &#8220;Domain Driven Design - tackling complexity in the heart of software&#8221; é, na minha opinião, um livro um pouco difícil de ser lido e &#8220;digerido&#8221;, porém consegue fornecer um insumo suficiente para desenvolver software com um &#8220;mindset&#8221; que prima a representação em código do negócio de nossos clientes.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/09/20/using-asset-pipeline-and-js-compression-with-angularjs/">Usando O &#8216;Assets Pipeline&#8217; + Compressão De Javascript Com AngularJS</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-20T12:55:00-03:00" pubdate data-updated="true">Sep 20<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Se você, como eu, está recebendo o erro</p>
+  <entry>
+    <title type="html"><![CDATA[Usando o 'assets pipeline' + compressão de Javascript com AngularJS]]></title>
+    <link href="http://rudywseidinger.github.com/blog/2012/09/20/using-asset-pipeline-and-js-compression-with-angularjs/"/>
+    <updated>2012-09-20T12:55:00-03:00</updated>
+    <id>http://rudywseidinger.github.com/blog/2012/09/20/using-asset-pipeline-and-js-compression-with-angularjs</id>
+    <content type="html"><![CDATA[<p>Se você, como eu, está recebendo o erro</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>Unknown provider: eProvider &lt;- e</span></code></pre></td></tr></table></div></figure>
@@ -334,44 +219,15 @@
 
 
 <p>Isso vai impedir o obfuscador do unglifier de atuar sob nomes de variáveis e irá corrigir o problema.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/08/29/git-a-few-tips-to-survive-in-the-git-world/">Sobrevivendo Ao Mundo GIT - 1</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-29T20:10:00-03:00" pubdate data-updated="true">Aug 29<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Algumas vezes no processo diário de desenvolvimento e versionamento dos nossos fontes, nos vemos em situações nas quais temos que lidar com o GIT para realizar algumas tarefas não tanto usuais.</p>
+  <entry>
+    <title type="html"><![CDATA[Sobrevivendo ao mundo GIT - 1]]></title>
+    <link href="http://rudywseidinger.github.com/blog/2012/08/29/git-a-few-tips-to-survive-in-the-git-world/"/>
+    <updated>2012-08-29T20:10:00-03:00</updated>
+    <id>http://rudywseidinger.github.com/blog/2012/08/29/git-a-few-tips-to-survive-in-the-git-world</id>
+    <content type="html"><![CDATA[<p>Algumas vezes no processo diário de desenvolvimento e versionamento dos nossos fontes, nos vemos em situações nas quais temos que lidar com o GIT para realizar algumas tarefas não tanto usuais.</p>
 
 <p>Neste post e alguns no futuro, pretendo mostrar como procedo em alguns destes casos:</p>
 
@@ -445,44 +301,15 @@
 
 
 <p>Aí, basta editar a mensagem, salvar novamente e sair e as alterações serão aplicadas em nível de branch local.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/08/09/cause-everything-starts-from-something-dot-dot-dot/">Cause Everything Starts From Something&#8230;</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-09T18:16:00-03:00" pubdate data-updated="true">Aug 9<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Since 2006, the year i&#8217;ve started working with programming, i&#8217;ve being wondering about creating a blog.</p>
+  <entry>
+    <title type="html"><![CDATA[Cause everything starts from something...]]></title>
+    <link href="http://rudywseidinger.github.com/blog/2012/08/09/cause-everything-starts-from-something-dot-dot-dot/"/>
+    <updated>2012-08-09T18:16:00-03:00</updated>
+    <id>http://rudywseidinger.github.com/blog/2012/08/09/cause-everything-starts-from-something-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>Since 2006, the year i&#8217;ve started working with programming, i&#8217;ve being wondering about creating a blog.</p>
 
 <p>The idea is just to write anything (interesting, of course) that i&#8217;m studying, learning or working with. That will be a great way to strategically organize ideas inside my head and express them in a straightforward way another human being (i supose) can understand.</p>
 
@@ -493,92 +320,7 @@
 
 <p><strong>Só uma atualização&#8230;</strong>
 Resolvi largar essa idéia de escrever em inglês&#8230; Em um lampejo de pensamento, esqueci-me que o propósito de escrever é meramente uma forma de recordação e registro de idéias e, para isso, nada melhor que o idioma nativo&#8230;</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2012/09/25/rails-controllers-x-domain-logic/">Rails - Controllers x Lógica de domíno</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/20/using-asset-pipeline-and-js-compression-with-angularjs/">Usando o &#8216;assets pipeline&#8217; + compressão de Javascript com AngularJS</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/29/git-a-few-tips-to-survive-in-the-git-world/">Sobrevivendo ao mundo GIT - 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/09/cause-everything-starts-from-something-dot-dot-dot/">Cause everything starts from something&#8230;</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - <a href="http://github.com/rudywseidinger">Rudy Seidinger Jr</a> -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33979185-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-</body>
-</html>
+</feed>
